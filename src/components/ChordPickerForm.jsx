@@ -1,19 +1,12 @@
 const ChordPickerForm = (props) => {
 
-    const setChord = () => {
-        const chord = document.getElementById('root-select').value
-        alert(chord)
-    }
-
-    const chordPicker = document.getElementById('root-select')
-
     return (
 
         <form className="chord-picker">
 
             <label htmlFor="root-select">Choose a Chord:</label>
 
-            <select name="roots" id="root-select" onChange={setChord}>
+            <select name="roots" id="root-select">
                 <option value="C">--Choose a Chord--</option>
                 <option value="a">A</option>
                 <option value="a#">A#</option>

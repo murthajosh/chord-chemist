@@ -7,16 +7,13 @@ import ChordPickerForm from './components/ChordPickerForm';
 
 
 function App() {
-  // const [chord, setChord] = useState
 
-  useEffect(() => {
-    const getChords = async () => {
+    const getChord = async () => {
       const response = await axios.get(`${BASE_URL}/chords/G`)
-      console.log(response.data[0].strings)
-    }
-    getChords()
-  }, [])
-  
+      console.log(response)
+    } 
+    getChord()
+
   return (
     <div className="App">
       <ChordPickerForm />

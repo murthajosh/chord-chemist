@@ -1,7 +1,7 @@
 const Fret = (props) => {
 
     return (
-        <div className="fret" id={props.id}>
+        <div className={props.className} id={props.id}>
             <div className="circle"></div>
         </div>
     )

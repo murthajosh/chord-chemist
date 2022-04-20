@@ -10,7 +10,7 @@ function App() {
 
     const getChord = async () => {
       const response = await axios.get(`${BASE_URL}/chords/G`)
-      console.log(response)
+      console.log(response.data[0].strings)
     } 
     getChord()
 

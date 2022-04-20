@@ -134,8 +134,7 @@ body {
   background: radial-gradient(#ffffff, #005fdb);
   filter: drop-shadow(0px 0px 10px #eeeeee);
   z-index:2;
-  color: white;
-  opacity: 1;
+  opacity: 0;
 }
 
 #high-e-string .single-fretmark:after {

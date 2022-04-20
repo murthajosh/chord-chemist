@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
+:root {
+  --fretboard-height: 300;
+  --number-of-strings: 6;
+  --string-height: 10;
+  --half-string-height: calc(var(--string-height) /2 );
+  --string-top-position: calc(var(--fretboard-height) / var(--number-of-strings) / 2 - var(--half-string-height));
+  --double-fretmark-position-1: calc(var(--fretboard-height) * 0.25);
+  --double-fretmark-position-2: calc(var(--fretboard-height) * 0.75);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background: #f9f9f9;
+  font-family: Lato, sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.fretboard {
+  perspective: 1000px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  background: white;
+  width: 100%;
+  height: calc(var(--fretboard-height) * 1px);
+  margin-top: 33vh;
+  box-shadow: 0px 120px 90px -40px rgba(102, 106, 133, 0.25);
+}
+
+.string {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+#high-e-string:before {
+  content:'';
+  width: 100%;
+  height: calc(var(--string-height) * .2px);
+  background: #C0C0C0; 
+  box-shadow: 76px 4px 10px -2px #555555;
+  z-index: 1;
+  position: absolute;
+  top: calc(var(--string-top-position) * 1.1px);
+}
+
+#b-string:before {
+  content:'';
+  width: 100%;
+  height: calc(var(--string-height) * .4px);
+  background: #C0C0C0; 
+  box-shadow: 76px 4px 10px -2px #555555;
+  z-index: 1;
+  position: absolute;
+  top: calc(var(--string-top-position) * 1px);
+}
+
+#g-string:before {
+  content:'';
+  width: 100%;
+  height: calc(var(--string-height) * .5px);
+  background: #C0C0C0;
+  box-shadow: 76px 4px 10px -2.5px #555555;
+  z-index: 1;
+  position: absolute;
+  top: calc(var(--string-top-position) * 1px);
+}
+
+#d-string:before {
+  content:'';
+  width: 100%;
+  height: calc(var(--string-height) * .6px);
+  background: #C0C0C0;
+  box-shadow: 76px 4px 10px -2px #555555;
+  z-index: 1;
+  position: absolute;
+  top: calc(var(--string-top-position) * 1px);
+}
+
+#a-string:before {
+  content:'';
+  width: 100%;
+  height: calc(var(--string-height) * .8px);
+  background: #C0C0C0; 
+  box-shadow: 76px 4px 10px -2px #555555;
+  z-index: 1;
+  position: absolute;
+  top: calc(var(--string-top-position) * 1px);
+}
+
+#low-e-string:before {
+  content:'';
+  width: 100%;
+  height: calc(var(--string-height) * 1px);
+  background: #C0C0C0; 
+  box-shadow: 76px 4px 10px -2px #555555;
+  z-index: 1;
+  position: absolute;
+  top: calc(var(--string-top-position) * 1px);
+}
+
+.fret {
+  display: flex;
+  flex: 1;
+  border-right: 8px solid;
+  border-image: linear-gradient(to left, #777777, #bbbbbb, #777777) 1 100%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  position: relative;
+}
+
+.fret:first-child {
+  background: #f2f2f2;
+  min-width: 76px;
+  border-right: 24px solid; 
+  flex-grow: 0;
+  flex-shrink: 0;
+  border-image: linear-gradient(to left, #bbbbbb, #ffffff, #bbbbbb) 1 100%
+}
+
+.circle {
+  content: '';
+  width:48px;
+  height:48px;
+  border-radius: 50%;
+  line-height: 48px;
+  text-align: center;
+  background: radial-gradient(#ffffff, #005fdb);
+  filter: drop-shadow(0px 0px 10px #eeeeee);
+  z-index:2;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  opacity: 1;
 }

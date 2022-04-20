@@ -9,8 +9,8 @@ function App() {
 
   useEffect(() => {
     const getChords = async () => {
-      const response = await axios.get(`${BASE_URL}/chords/F_maj7`)
-      console.log(response)
+      const response = await axios.get(`${BASE_URL}/chords/G_maj7`)
+      console.log(response.data[0].strings)
     }
     getChords()
   }, [])

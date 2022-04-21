@@ -8,12 +8,12 @@ const Fretboard = (props) => {
 
     return (
         <div className="fretboard" chord-data={props.chordData}> 
-            <String id="high-e-string" frettoshow={props.chordData[10]}/>  
-            <String id="b-string" frettoshow={props.chordData[8]}/>  
-            <String id="g-string" frettoshow={props.chordData[6]}/>  
-            <String id="d-string" frettoshow={props.chordData[4]}/>  
-            <String id="a-string" frettoshow={props.chordData[2]}/>  
-            <String id="low-e-string" frettoshow={props.chordData[0]}/>              
+            <String id="high-e-string" frettoshow={parseInt(props.chordData[10])}/>  
+            <String id="b-string" frettoshow={parseInt(props.chordData[8])}/>  
+            <String id="g-string" frettoshow={parseInt(props.chordData[6])}/>  
+            <String id="d-string" frettoshow={parseInt(props.chordData[4])}/>  
+            <String id="a-string" frettoshow={parseInt(props.chordData[2])}/>  
+            <String id="low-e-string" frettoshow={parseInt(props.chordData[0])}/>              
         </div>
     )
 }

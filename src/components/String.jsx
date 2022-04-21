@@ -1,6 +1,14 @@
 import Fret from "./Fret"
 
 const String = (props) => {
+
+    const frets = document.querySelectorAll('.fret')
+
+    frets.forEach((fret) => {
+        if (fret.classList.contains(props.fretToShow)) {
+            fret.classList.add('fret-on')
+        }
+    })
     
     return (
         <div className="string" id={props.id} fretToShow={props.fretToShow}>

@@ -52,7 +52,7 @@ const App = () => {
       try {
         const response = await axios.get(`${BASE_URL}/chords/${rootState}`)
         setChordData(response.data[0].strings)
-        console.log(chordData)
+        console.log(response.data[0].strings)
       } catch(err) {
           console.log(err)
       }

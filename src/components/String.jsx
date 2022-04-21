@@ -3,7 +3,7 @@ import Fret from "./Fret"
 const String = (props) => {
     
     return (
-        <div className="string" id={props.id}>
+        <div className="string" id={props.id} fretToShow={props.fretToShow}>
             <Fret className="fret 0"/> 
             <Fret className="fret 1"/> 
             <Fret className="fret 2"/> 

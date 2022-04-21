@@ -12,22 +12,22 @@ const String = (props) => {
     
     return (
         <div className="string" id={props.id} fretToShow={props.fretToShow}>
-            <Fret className="fret 0"/> 
-            <Fret className="fret 1"/> 
-            <Fret className="fret 2"/> 
-            <Fret className="fret 3 single-fretmark"/> 
-            <Fret className="fret 4"/> 
-            <Fret className="fret 5 single-fretmark"/> 
-            <Fret className="fret 6"/> 
-            <Fret className="fret 7 single-fretmark"/> 
-            <Fret className="fret 8"/> 
-            <Fret className="fret 9 single-fretmark"/> 
-            <Fret className="fret 10"/> 
-            <Fret className="fret 11"/> 
-            <Fret className="fret 12 double-fretmark"/> 
-            <Fret className="fret 13"/> 
-            <Fret className="fret 14"/>  
-            <Fret className="fret 15 single-fretmark"/>          
+            <Fret className="fret 0" fretCheck={props.fretToShow}/> 
+            <Fret className="fret 1" fretCheck={props.fretToShow}/> 
+            <Fret className="fret 2" fretCheck={props.fretToShow}/> 
+            <Fret className="fret 3 single-fretmark" fretCheck={props.fretToShow}/> 
+            <Fret className="fret 4" fretCheck={props.fretToShow}/> 
+            <Fret className="fret 5 single-fretmark" fretCheck={props.fretToShow}/> 
+            <Fret className="fret 6" fretCheck={props.fretToShow}/> 
+            <Fret className="fret 7 single-fretmark" fretCheck={props.fretToShow}/> 
+            <Fret className="fret 8" fretCheck={props.fretToShow}/> 
+            <Fret className="fret 9 single-fretmark" fretCheck={props.fretToShow}/> 
+            <Fret className="fret 10" fretCheck={props.fretToShow}/> 
+            <Fret className="fret 11" fretCheck={props.fretToShow}/> 
+            <Fret className="fret 12 double-fretmark" fretCheck={props.fretToShow}/> 
+            <Fret className="fret 13" fretCheck={props.fretToShow}/> 
+            <Fret className="fret 14" fretCheck={props.fretToShow}/>  
+            <Fret className="fret 15 single-fretmark" fretCheck={props.fretToShow}/>          
         </div>
     )
 }

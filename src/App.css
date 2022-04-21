@@ -137,6 +137,10 @@ body {
   opacity: 0;
 }
 
+.circle.fret-on {
+  opacity: 1;
+}
+
 #high-e-string .single-fretmark:after {
   content: '';
   position: absolute;

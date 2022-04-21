@@ -69,7 +69,7 @@ const App = () => {
       </select>
       {rootState}
       <button onClick={getChord}>Click Me</button>
-      <Fretboard />
+      <Fretboard chordData={chordData}/>
     </div>
   );
 }

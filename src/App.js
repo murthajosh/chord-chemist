@@ -46,13 +46,24 @@ const rootOptions = [
 
 const App = () => {
 
-  const [rootState, setrootState] = useState('')
+  const [rootState, setRootState] = useState('A')
+
+  const getChord = async () => {
+      try {
+        const response = await axios.get(`${BASE_URL}/chords/${rootState}`)
+        console.log(response.data[0].strings)
+      } catch(err) {
+          console.log(err)
+      }
+  } 
 
   return (
     <div className="App">
-      <select name="roots" id="chord-select" value={rootState} onChange={(e) => {
+      <select name="roots" id="chord-select" onChange={(e) => {
         const selectedRoot = e.target.value
-        setrootState(selectedRoot)
+        setRootState(selectedRoot)
+        getChord(rootState)
+        console.log(rootState)
       }}>
           {rootOptions.map((rootOption) => (
               <option key={rootOption.value} value={rootOption.value}>{rootOption.label}</option>

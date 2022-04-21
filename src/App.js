@@ -60,16 +60,14 @@ const App = () => {
   return (
     <div className="App">
       <select name="roots" id="chord-select" onChange={(e) => {
-        const selectedRoot = e.target.value
-        setRootState(selectedRoot)
-        getChord(rootState)
-        console.log(rootState)
+        setRootState(e.target.value)
       }}>
           {rootOptions.map((rootOption) => (
               <option key={rootOption.value} value={rootOption.value}>{rootOption.label}</option>
           ))}
       </select>
       {rootState}
+      <button onClick={getChord}>Click Me</button>
       <Fretboard />
     </div>
   );

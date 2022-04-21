@@ -2,7 +2,6 @@ import './App.css';
 import axios from 'axios'
 import { BASE_URL} from './globals'
 import { useEffect, useState } from 'react'
-import ChordSelect from './components/ChordSelect';
 import Fretboard from './components/Fretboard'
 
 const rootOptions = [
@@ -47,11 +46,13 @@ const rootOptions = [
 const App = () => {
 
   const [rootState, setRootState] = useState('A')
+  const [chordData, setChordData] = useState([])
 
   const getChord = async () => {
       try {
         const response = await axios.get(`${BASE_URL}/chords/${rootState}`)
-        console.log(response.data[0].strings)
+        setChordData(response.data[0].strings)
+        console.log(chordData)
       } catch(err) {
           console.log(err)
       }

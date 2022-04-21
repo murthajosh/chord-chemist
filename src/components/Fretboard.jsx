@@ -7,12 +7,12 @@ const Fretboard = (props) => {
 
     return (
         <div className="fretboard"> 
-            <String id="high-e-string"/>  
-            <String id="b-string"/>  
-            <String id="g-string"/>  
-            <String id="d-string"/>  
-            <String id="a-string"/>  
-            <String id="low-e-string"/>              
+            <String id="high-e-string" displayedNote={props.displayedNote}/>  
+            <String id="b-string" displayedNote={props.displayedNote}/>  
+            <String id="g-string" displayedNote={props.displayedNote}/>  
+            <String id="d-string" displayedNote={props.displayedNote}/>  
+            <String id="a-string" displayedNote={props.displayedNote}/>  
+            <String id="low-e-string" displayedNote={props.displayedNote}/>              
         </div>
     )
 }

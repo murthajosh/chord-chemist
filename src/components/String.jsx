@@ -4,22 +4,22 @@ const String = (props) => {
     
     return (
         <div className="string" id={props.id}>
-            <Fret className="fret"  id="fret-0"/> 
-            <Fret className="fret" id="fret-1"/> 
-            <Fret className="fret" id="fret-2"/> 
-            <Fret className="fret single-fretmark" id="fret-3"/> 
-            <Fret className="fret" id="fret-4"/> 
-            <Fret className="fret single-fretmark" id="fret-5"/> 
-            <Fret className="fret" id="fret-6"/> 
-            <Fret className="fret single-fretmark" id="fret-7"/> 
-            <Fret className="fret" id="fret-8"/> 
-            <Fret className="fret single-fretmark" id="fret-9"/> 
-            <Fret className="fret" id="fret-10"/> 
-            <Fret className="fret" id="fret-11"/> 
-            <Fret className="fret double-fretmark" id="fret-12"/> 
-            <Fret className="fret" id="fret-13"/> 
-            <Fret className="fret" id="fret-14"/>  
-            <Fret className="fret single-fretmark" id="fret-15"/>          
+            <Fret className="fret 0"/> 
+            <Fret className="fret 1"/> 
+            <Fret className="fret 2"/> 
+            <Fret className="fret 3 single-fretmark"/> 
+            <Fret className="fret 4"/> 
+            <Fret className="fret 5 single-fretmark"/> 
+            <Fret className="fret 6"/> 
+            <Fret className="fret 7 single-fretmark"/> 
+            <Fret className="fret 8"/> 
+            <Fret className="fret 9 single-fretmark"/> 
+            <Fret className="fret 10"/> 
+            <Fret className="fret 11"/> 
+            <Fret className="fret 12 double-fretmark"/> 
+            <Fret className="fret 13"/> 
+            <Fret className="fret 14"/>  
+            <Fret className="fret 15 single-fretmark"/>          
         </div>
     )
 }

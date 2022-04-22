@@ -72,7 +72,7 @@ const App = () => {
         <select name="roots" id="chord-select" onChange={(e) => {
           setRootState(e.target.value)
         }}> 
-             <option value="" disabled selected>Pick a Chord</option>
+             <option value="" disabled selected>Choose Root</option>
             {rootOptions.map((rootOption) => (
                 <option key={rootOption.value} value={rootOption.value}>{rootOption.label}</option>
             ))}
@@ -81,7 +81,7 @@ const App = () => {
         <select name="qualities" id="quality-select" onChange={(e) => {
           setQualityState(e.target.value)
         }}> 
-             <option value="" disabled selected>Pick a Quality</option>
+             <option value="" disabled selected>Maj or Min?</option>
             {qualityOptions.map((qualityOption) => (
                 <option key={qualityOption.value} value={qualityOption.value}>{qualityOption.label}</option>
             ))}

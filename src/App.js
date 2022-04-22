@@ -43,14 +43,22 @@ const rootOptions = [
   },
 ]
 
+const qualityOptions = [
+  {label: "Maj",
+   value: "",},
+   {label: "Min",
+  value: "m",},
+]
+
 const App = () => {
 
   const [rootState, setRootState] = useState('A')
+  const[qualityState, setQualityState] = useState('')
   const [chordData, setChordData] = useState([])
 
   const getChord = async () => {
       try {
-        const response = await axios.get(`${BASE_URL}/chords/${rootState}`)
+        const response = await axios.get(`${BASE_URL}/chords/${rootState}_${qualityState}`)
         setChordData(response.data[0].strings)
         console.log(response.data[0].strings)
       } catch(err) {
@@ -69,6 +77,16 @@ const App = () => {
                 <option key={rootOption.value} value={rootOption.value}>{rootOption.label}</option>
             ))}
         </select>
+
+        <select name="qualities" id="quality-select" onChange={(e) => {
+          setQualityState(e.target.value)
+        }}> 
+             <option value="" disabled selected>Pick a Quality</option>
+            {qualityOptions.map((qualityOption) => (
+                <option key={qualityOption.value} value={qualityOption.value}>{qualityOption.label}</option>
+            ))}
+        </select>
+
         <button className="show-chord-button"onClick={getChord}>Show Chord</button>
       </div>
       <Fretboard chordData={chordData}/>

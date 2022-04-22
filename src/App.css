@@ -134,10 +134,6 @@ body {
   background: radial-gradient(#ffffff, #005fdb);
   filter: drop-shadow(0px 0px 10px #eeeeee);
   z-index:2;
-  opacity: 0;
-}
-
-.fret-on .circle {
   opacity: 1;
 }
 

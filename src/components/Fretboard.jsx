@@ -7,13 +7,13 @@ const Fretboard = (props) => {
 
 
     return (
-        <div className="fretboard" chord-data={props.chordData}> 
-            <String id="high-e-string" frettoshow={parseInt(props.chordData[10])}/>  
-            <String id="b-string" frettoshow={parseInt(props.chordData[8])}/>  
-            <String id="g-string" frettoshow={parseInt(props.chordData[6])}/>  
-            <String id="d-string" frettoshow={parseInt(props.chordData[4])}/>  
-            <String id="a-string" frettoshow={parseInt(props.chordData[2])}/>  
-            <String id="low-e-string" frettoshow={parseInt(props.chordData[0])}/>              
+        <div className="fretboard" chordData={props.chordData}> 
+            <String id="high-e-string" fretToShow={parseInt(props.chordData[10])}/>  
+            <String id="b-string" fretToShow={parseInt(props.chordData[8])}/>  
+            <String id="g-string" fretToShow={parseInt(props.chordData[6])}/>  
+            <String id="d-string" fretToShow={parseInt(props.chordData[4])}/>  
+            <String id="a-string" fretToShow={parseInt(props.chordData[2])}/>  
+            <String id="low-e-string" fretToShow={parseInt(props.chordData[0])}/>              
         </div>
     )
 }

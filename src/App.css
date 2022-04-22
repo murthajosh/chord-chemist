@@ -18,6 +18,18 @@ body {
   font-family: Lato, sans-serif;
 }
 
+header {
+  display:flex;
+  text-align: center;
+  margin-top: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-family: 'Michroma', sans-serif;
+  font-size: 48px;
+}
+
 .fretboard {
   perspective: 1000px;
   display: flex;
@@ -25,7 +37,7 @@ body {
   background: white;
   width: 100%;
   height: calc(var(--fretboard-height) * 1px);
-  margin-top: 15vh;
+  margin-top: 8vh;
   box-shadow: 30px 120px 30px -40px rgba(102, 106, 133, 0.25);
 }
 

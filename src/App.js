@@ -68,6 +68,16 @@ const App = () => {
 
   return (
     <div className="App">
+      <header>
+        <svg width="91" height="64" viewBox="0 0 91 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="38.5354" y1="60.3477" x2="57.7662" y2="46.4054" stroke="black" stroke-width="7.69231"/>
+        <line x1="38.3668" y1="14.9252" x2="59.5207" y2="26.9445" stroke="black" stroke-width="7.69231"/>
+        <circle cx="24.9271" cy="75.9615" r="20.1923" stroke="black" stroke-width="7.69231"/>
+        <circle cx="71.5608" cy="38.9423" r="15.3846" stroke="black" stroke-width="7.69231"/>
+        <circle cx="31.1774" cy="12.0192" r="8.17307" stroke="black" stroke-width="7.69231"/>
+        </svg>
+        <h1>ChordChemist</h1>
+      </header>
       <div className="controls">
         <select name="roots" id="chord-select" onChange={(e) => {
           setRootState(e.target.value)

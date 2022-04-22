@@ -60,15 +60,17 @@ const App = () => {
 
   return (
     <div className="App">
-      <select name="roots" id="chord-select" onChange={(e) => {
-        setRootState(e.target.value)
-      }}>
-          {rootOptions.map((rootOption) => (
-              <option key={rootOption.value} value={rootOption.value}>{rootOption.label}</option>
-          ))}
-      </select>
-      {rootState}
-      <button onClick={getChord}>Click Me</button>
+      <div className="controls">
+        <select name="roots" id="chord-select" onChange={(e) => {
+          setRootState(e.target.value)
+        }}> 
+             <option value="" disabled selected>Pick a Chord</option>
+            {rootOptions.map((rootOption) => (
+                <option key={rootOption.value} value={rootOption.value}>{rootOption.label}</option>
+            ))}
+        </select>
+        <button className="show-chord-button"onClick={getChord}>Show Chord</button>
+      </div>
       <Fretboard chordData={chordData}/>
     </div>
   );

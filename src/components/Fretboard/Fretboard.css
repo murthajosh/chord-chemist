@@ -1,0 +1,10 @@
+.fretboard {
+    perspective: 1000px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 100%;
+    height: calc(var(--fretboard-height) * 1px);
+    margin-top: 8vh;
+    box-shadow: 30px 120px 30px -40px rgba(102, 106, 133, 0.25);
+  }

@@ -1,0 +1,46 @@
+.string {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+.string:before {
+    content:'';
+    width: 100%;
+    background: #C0C0C0; 
+    box-shadow: 76px 4px 10px -2px #555555;
+    z-index: 1;
+    position: absolute;
+}
+
+#high-e-string:before {
+    height: calc(var(--string-height) * .2px);
+    top: calc(var(--string-top-position) * 1.1px);
+  }
+  
+  #b-string:before {
+    height: calc(var(--string-height) * .4px);
+    top: calc(var(--string-top-position) * 1px);
+  }
+  #g-string:before {
+    height: calc(var(--string-height) * .5px);
+    top: calc(var(--string-top-position) * 1px);
+  }
+  #d-string:before {
+    height: calc(var(--string-height) * .6px);
+    background-image: url(/public/d-string-texture.png);
+    top: calc(var(--string-top-position) * 1px);
+  }
+  #a-string:before {
+    height: calc(var(--string-height) * .8px); 
+    background-image: url(/public/a-string-texture.png);
+    top: calc(var(--string-top-position) * 1px);
+  }
+  
+  #low-e-string:before {
+    height: calc(var(--string-height) * 1px); 
+    background-image: url(/public/e-string-texture.png);
+    top: calc(var(--string-top-position) * 1px);
+  }
+

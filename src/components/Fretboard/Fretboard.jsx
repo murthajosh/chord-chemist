@@ -1,7 +1,7 @@
-import { BASE_URL} from '../globals'
+import { BASE_URL} from '../../globals'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
-import String from './String'
+import String from '../String/String'
 
 const Fretboard = (props) => {
 

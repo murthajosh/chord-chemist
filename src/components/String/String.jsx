@@ -1,4 +1,4 @@
-import Fret from "./Fret"
+import Fret from "../Fret/Fret"
 
 const String = (props) => {
     

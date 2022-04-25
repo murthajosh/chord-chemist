@@ -2,7 +2,7 @@ import './App.css';
 import axios from 'axios'
 import { BASE_URL} from './globals'
 import { useEffect, useState } from 'react'
-import Fretboard from './components/Fretboard'
+import Fretboard from './components/Fretboard/Fretboard'
 
 const rootOptions = [
   {label: "A",

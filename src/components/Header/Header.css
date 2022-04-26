@@ -1,0 +1,11 @@
+header {
+    display:flex;
+    text-align: center;
+    margin-top: 4rem;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    font-family: 'Michroma', sans-serif;
+    font-size: 48px;
+  }

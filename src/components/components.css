@@ -1,3 +1,5 @@
+@import "./Header/Header.css";
+@import "./Controls/Controls.css";
 @import "./Fretboard/Fretboard.css";
 @import "./String/String.css";
 @import "./Fret/Fret.css";

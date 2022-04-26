@@ -3,52 +3,9 @@ import axios from 'axios'
 import { BASE_URL} from './globals'
 import { useEffect, useState } from 'react'
 import Fretboard from './components/Fretboard/Fretboard'
+import rootOptions from './data/root-options.json'
+import qualityOptions from './data/quality-options.json'
 
-const rootOptions = [
-  {label: "A",
-    value: "A",
-  },
-  {label: "Bb",
-    value: "Bb",
-  },
-  {label: "B",
-    value: "B",
-  },
-  {label: "C",
-    value: "C",
-  },
-  {label: "Db",
-    value: "Db",
-  },
-  {label: "D",
-    value: "D",
-  },
-  {label: "Eb",
-    value: "Eb",
-  },
-  {label: "E",
-    value: "E",
-  },
-  {label: "F",
-    value: "F",
-  },
-  {label: "Gb",
-    value: "Gb",
-  },
-  {label: "G",
-    value: "G",
-  },
-  {label: "Ab",
-    value: "Ab",
-  },
-]
-
-const qualityOptions = [
-  {label: "Maj",
-   value: "",},
-   {label: "Min",
-  value: "m",},
-]
 
 const App = () => {
 

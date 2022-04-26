@@ -44,3 +44,36 @@
     top: calc(var(--string-top-position) * 1px);
   }
 
+  #high-e-string .single-fretmark:after {
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #444444;
+    top:calc(var(--fretboard-height) / 2 * 1px);
+    transform: translate(0, -50%);
+  }
+  
+  #high-e-string .double-fretmark:before {
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #444444;
+    top: calc(var(--double-fretmark-position-1) * 1px);
+    transform: translate(0%, -50%);
+  }
+  
+  #high-e-string .double-fretmark:after {
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #444444;
+    top: calc(var(--double-fretmark-position-2) * 1px);
+    transform: translate(0%, -50%);
+  }
+
